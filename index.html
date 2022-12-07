@@ -6,18 +6,44 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Kalkulator JavaScript</title>
         <link rel="stylesheet" href="style.css" />
+        <link href="https://fonts.googleapis.com/css?family=Viga&display=swap" rel="stylesheet" />
     </head>
     <body>
         <div class="main">
             <h1>Calculator</h1>
             <input type="textarea" />
             <section>
-                <div class="baris1">
-                    <div class="clear">
-                        <p>C</p>
-                    </div>
-                    <div class="delete"></div>
-                </div>
+                <table>
+                    <tr>
+                        <td><input class="button" type="button" value="C" onclick="clean()" /></td>
+                        <td><input class="button" type="button" value="Del" onclick="back()" /></td>
+                        <td><input class="button-green" type="button" value="/" onclick="insert(' / ')" /></td>
+                        <td><input class="button-green" type="button" value="x" onclick="insert(' * ')" /></td>
+                    </tr>
+                    <tr>
+                        <td><input class="button" type="button" value="7" onclick="insert(7)" /></td>
+                        <td><input class="button" type="button" value="8" onclick="insert(8)" /></td>
+                        <td><input class="button" type="button" value="9" onclick="insert(9)" /></td>
+                        <td><input class="button-green" type="button" value="-" onclick="insert(' - ')" /></td>
+                    </tr>
+                    <tr>
+                        <td><input type="button" type="button" value="4" /></td>
+                        <td><input type="button" type="button" value="5" /></td>
+                        <td><input type="button" type="button" value="6" /></td>
+                        <td><input type="button" type="button" value="+" /></td>
+                    </tr>
+                    <tr>
+                        <td><input type="button" type="button" value="1" /></td>
+                        <td><input type="button" type="button" value="2" /></td>
+                        <td><input type="button" type="button" value="3" /></td>
+                        <td rowspan="2"><input type="button" type="button" value="=" /></td>
+                    </tr>
+                    <tr>
+                        <td><input type="button" type="button" value="0" /></td>
+                        <td><input type="button" type="button" value="00" /></td>
+                        <td><input type="button" type="button" value="." /></td>
+                    </tr>
+                </table>
             </section>
         </div>
     </body>

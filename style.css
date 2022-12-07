@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Viga;
 }
 
 body {
@@ -25,10 +26,11 @@ body {
     margin-top: 10px;
 }
 
-input {
+.textarea {
     width: 280px;
     margin: 10px;
     height: 30px;
+    text-align: right;
 }
 
 section {
