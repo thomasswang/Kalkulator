@@ -11,40 +11,43 @@
     <body>
         <div class="main">
             <h1>Calculator</h1>
-            <input type="textarea" />
+            <form name="form">
+                <input class="textarea" name="textarea" />
+            </form>
             <section>
                 <table>
                     <tr>
-                        <td><input class="button" type="button" value="C" onclick="clean()" /></td>
-                        <td><input class="button" type="button" value="Del" onclick="back()" /></td>
-                        <td><input class="button-green" type="button" value="/" onclick="insert(' / ')" /></td>
-                        <td><input class="button-green" type="button" value="x" onclick="insert(' * ')" /></td>
+                        <td><button class="button" id="C">C</button></td>
+                        <td><button class="button" id="Del">Del</button></td>
+                        <td><button class="button-green" id="bagi">/</button></td>
+                        <td><button class="button-green" id="kali">X</button></td>
                     </tr>
                     <tr>
-                        <td><input class="button" type="button" value="7" onclick="insert(7)" /></td>
-                        <td><input class="button" type="button" value="8" onclick="insert(8)" /></td>
-                        <td><input class="button" type="button" value="9" onclick="insert(9)" /></td>
-                        <td><input class="button-green" type="button" value="-" onclick="insert(' - ')" /></td>
+                        <td><button class="button" id="7">7</button></td>
+                        <td><button class="button" id="8">8</button></td>
+                        <td><button class="button" id="9">9</button></td>
+                        <td><button class="button-green" id="kurang">-</button></td>
                     </tr>
                     <tr>
-                        <td><input type="button" type="button" value="4" /></td>
-                        <td><input type="button" type="button" value="5" /></td>
-                        <td><input type="button" type="button" value="6" /></td>
-                        <td><input type="button" type="button" value="+" /></td>
+                        <td><button class="button" id="4">4</button></td>
+                        <td><button class="button" id="5">5</button></td>
+                        <td><button class="button" id="6">6</button></td>
+                        <td><button class="button-green" id="tambah">+</button></td> 
                     </tr>
                     <tr>
-                        <td><input type="button" type="button" value="1" /></td>
-                        <td><input type="button" type="button" value="2" /></td>
-                        <td><input type="button" type="button" value="3" /></td>
-                        <td rowspan="2"><input type="button" type="button" value="=" /></td>
+                        <td><button class="button" id="1">1</button></td>
+                        <td><button class="button" id="2">2</button></td>
+                        <td><button class="button" id="3">3</button></td>
+                        <td rowspan="2"><button class="button-green" id="sama-dengan">=</button></td> 
                     </tr>
                     <tr>
-                        <td><input type="button" type="button" value="0" /></td>
-                        <td><input type="button" type="button" value="00" /></td>
-                        <td><input type="button" type="button" value="." /></td>
+                        <td><input class="button" type="button" type="button" value="0" /></td>
+                        <td><input class="button" type="button" type="button" value="00" /></td>
+                        <td><input class="button" type="button" type="button" value="." /></td>
                     </tr>
                 </table>
             </section>
+            <html>
         </div>
     </body>
 </html>
