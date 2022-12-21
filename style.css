@@ -64,3 +64,13 @@ table {
 #sama-dengan {
     height: 110px;
 }
+
+.gradient {
+    width: 305px;
+    height: 455px;
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

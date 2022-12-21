@@ -9,51 +9,47 @@
         <link href="https://fonts.googleapis.com/css?family=Viga&display=swap" rel="stylesheet" />
     </head>
     <body>
-        <div class="main">
-            <h1>Calculator</h1>
-            <form name="form">
-				<input class="textarea" name="textarea">
-			</form>
-            <section>
-                <table>
-                    <tr>
-                        <td><button class="button" id="C">C</button></td>
-                        <td><button class="button" id="Del">Del</button></td>
-                        <td><button class="button-green" onclick="insert(' / ')">/</button></td>
-                        <td><button class="button-green" id="kali">X</button></td>
-                    </tr>
-                    <tr>
-                        <td><button class="button" onclick="insert(7)">7</button></td>
-                        <td><button class="button" onclick="insert(8)">8</button></td>
-                        <td><button class="button" onclick="insert(9)">9</button></td>
-                        <td><button class="button-green" id="kurang">-</button></td>
-                    </tr>
-                    <tr>
-                        <td><button class="button" id="4">4</button></td>
-                        <td><button class="button" id="5">5</button></td>
-                        <td><button class="button" id="6">6</button></td>
-                        <td><button class="button-green" id="tambah">+</button></td> 
-                    </tr>
-                    <tr>
-                        <td><button class="button" id="1">1</button></td>
-                        <td><button class="button" id="2">2</button></td>
-                        <td><button class="button" id="3">3</button></td>
-                        <td rowspan="2"><button class="button-green" id="sama-dengan">=</button></td> 
-                    </tr>
-                    <tr>
-                        <td><input class="button" type="button" type="button" value="0" /></td>
-                        <td><input class="button" type="button" type="button" value="00" /></td>
-                        <td><input class="button" type="button" type="button" value="." /></td>
-                    </tr>
-                    <tr>
-						<td><input class="button" type="button" value="7" onclick="insert(7)"></td>
-						<td><input class="button" type="button" value="8" onclick="insert(8)"></td>
-						<td><input class="button" type="button" value="9" onclick="insert(9)"></td>
-						<td><input class="button btn-green" type="button" value="-" onclick="insert(' - ')"></td>
-					</tr>
-                </table>
-            </section>
-            <html>  
+        <div class="gradient">
+            <div class="main">
+                <h1>Calculator</h1>
+                <form name="form">
+                    <input class="textarea" name="textarea">
+                </form>
+                <section>
+                    <table>
+                        <tr>
+                            <td><button class="button" onclick="clean()">C</button></td>
+                            <td><button class="button" onclick="del()">Del</button></td>
+                            <td><button class="button-green" onclick="insert(' / ')">/</button></td>
+                            <td><button class="button-green" onclick="insert(' * ')">X</button></td>
+                        </tr>
+                        <tr>
+                            <td><button class="button" onclick="insert(7)">7</button></td>
+                            <td><button class="button" onclick="insert(8)">8</button></td>
+                            <td><button class="button" onclick="insert(9)">9</button></td>
+                            <td><button class="button-green" onclick="insert(' - ')">-</button></td>
+                        </tr>
+                        <tr>
+                            <td><button class="button" onclick="insert(4)">4</button></td>
+                            <td><button class="button" onclick="insert(5)">5</button></td>
+                            <td><button class="button" onclick="insert(6)">6</button></td>
+                            <td><button class="button-green" onclick="insert(' + ')">+</button></td> 
+                        </tr>
+                        <tr>
+                            <td><button class="button" onclick="insert(1)">1</button></td>
+                            <td><button class="button" onclick="insert(2)">2</button></td>
+                            <td><button class="button" onclick="insert(3)">3</button></td>
+                            <td rowspan="2"><button class="button-green" id="sama-dengan" onclick="equal()">=</button></td> 
+                        </tr>
+                        <tr>
+                            <td><button class="button" onclick="insert(0)">0</button></td>
+                            <td><button class="button" onclick="insert('00')">00</button></td>
+                            <td><button class="button" onclick="insert('.')">.</button></td>
+                        </tr>
+                    </table>
+                </section>
+                <html>  
+            </div>
         </div>
         <script src="script.js"></script>
     </body>

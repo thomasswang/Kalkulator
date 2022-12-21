@@ -36,7 +36,7 @@ function clean() {
 }
 
 // Delete
-function back() {
+function del() {
     var hasil = document.form.textarea.value;
     document.form.textarea.value = hasil.substring(0, hasil.length - 1);
 }
